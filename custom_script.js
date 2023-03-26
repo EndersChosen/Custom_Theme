@@ -5,10 +5,10 @@
 
     if (path.match(/gradebook/)) {
         waitForElement('#gradebook-student-search', () => {
-            alert('gradebook ready');
             const gradebook = document.querySelector('#gradebook_app');
             const button = document.createElement('button');
             button.innerText = 'Update Module Progress';
+            button.style = "margin-bottom: 5px;";
 
             gradebook.append(button);
         })
